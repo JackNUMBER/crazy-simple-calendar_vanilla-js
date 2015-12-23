@@ -1,0 +1,55 @@
+$day_size: 70;
+$main_color: #4f93c8;
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+body {
+    background: #ccc;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
+
+a {
+    color: #000;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#calendar {
+    width: 7 * $day_size + px;
+
+    h2 {
+        line-height: 170px;
+        margin: 0;
+        font-weight: 300;
+        color: #fff;
+        background: $main_color;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        margin-top: -42px;
+        border-collapse: collapse;
+    }
+
+    .week-days {
+        color: #fff;
+    }
+
+    .day {
+        width: $day_size + px;
+        height: 40px;
+        text-align: center;
+    }
+
+    .week .day {
+        background: #eee;
+    }
+
+    .other-month {
+        opacity: 0.5;
+    }
+}
